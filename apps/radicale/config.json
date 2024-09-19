@@ -1,0 +1,19 @@
+{
+  "$schema": "../schema.json",
+  "name": "Radicale",
+  "id": "radicale",
+  "available": true,
+  "short_desc": "Free and Open-Source CalDAV and CardDAV Server.",
+  "author": "Kozea",
+  "port": 5232,
+  "categories": ["data", "utilities"],
+  "description": "Free and Open-Source CalDAV and CardDAV Server.",
+  "tipi_version": 3,
+  "version": "3.2.3.1",
+  "source": "https://github.com/Kozea/Radicale",
+  "exposable": true,
+  "supported_architectures": ["arm64", "amd64"],
+  "form_fields": [],
+  "created_at": 1726787255231,
+  "updated_at": 1726787263656
+}
