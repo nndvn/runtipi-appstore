@@ -3,7 +3,7 @@ services:
   radicale:
     image: tomsquest/docker-radicale:3.2.3.1
     container_name: radicale
-    user: ${UID}:${GID}
+    # user: ${UID}:${GID}
     # environment:
     #   - PUID=1000
     #   - PGID=1000
