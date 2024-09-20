@@ -13,7 +13,18 @@
   "source": "https://github.com/Kozea/Radicale",
   "exposable": true,
   "supported_architectures": ["arm64", "amd64"],
-  "form_fields": [],
+  "form_fields": [
+    {
+      "type": "password",
+      "label": "Admin secret",
+      "placeholder": "placeholder",
+      "hint": "Run `htpasswd -nbB YOUR_USERNAME YOUR_PASSWORD` to get your secret.",
+      "max": 255,
+      "min": 64,
+      "required": true,
+      "env_variable": "RADICALE_ADMIN"
+    }
+  ],
   "created_at": 1726787255231,
   "updated_at": 1726787263656
 }
