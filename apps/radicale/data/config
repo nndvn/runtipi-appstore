@@ -31,7 +31,7 @@ htpasswd_encryption = bcrypt
 
 [rights]
 
-type = owner_only
+#type = owner_only
 #file = /etc/radicale/rights
 #permit_delete_collection = True
 

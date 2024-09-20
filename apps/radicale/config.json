@@ -9,7 +9,7 @@
   "categories": ["data", "utilities"],
   "description": "Free and Open-Source CalDAV and CardDAV Server.",
   "tipi_version": 3,
-  "version": "3.2.3.1",
+  "version": "3.1.9.1",
   "source": "https://github.com/Kozea/Radicale",
   "exposable": true,
   "supported_architectures": ["arm64", "amd64"],
