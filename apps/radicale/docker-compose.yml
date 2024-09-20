@@ -12,8 +12,8 @@ services:
     #   - ${DNS_IP}
     volumes:
       - ${APP_DATA_DIR}/data:/data
-      - ${APP_DATA_DIR}/data/config:/etc/radicale/config
-      - ${APP_DATA_DIR}/data/users:/etc/radicale/users
+      - ${APP_DATA_DIR}/data/config:/config/config:ro
+      - ${APP_DATA_DIR}/data/users:/etc/radicale/users:ro
     ports:
       - ${APP_PORT}:5232
     restart: unless-stopped
