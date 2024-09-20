@@ -115,6 +115,7 @@
 
 # Folder for storing local collections, created if not present
 #filesystem_folder = /var/lib/radicale/collections
+filesystem_folder = /data/collections
 
 # Delete sync token that are older (seconds)
 #max_sync_token_age = 2592000

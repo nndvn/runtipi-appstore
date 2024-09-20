@@ -3,6 +3,7 @@ services:
   radicale:
     image: tomsquest/docker-radicale:3.2.3.1
     container_name: radicale
+    user: ${UID}:${GID}
     # environment:
     #   - PUID=1000
     #   - PGID=1000
@@ -11,8 +12,8 @@ services:
     #   - ${DNS_IP}
     volumes:
       - '${APP_DATA_DIR}/data:/data'
-      # - ./config:/config
-      # - ./config/users:/etc/radicale/users
+      - '${APP_DATA_DIR}/data/config:/config'
+      # - '${APP_DATA_DIR}/data/users:/etc/radicale/users'
     ports:
       - ${APP_PORT}:5232
     restart: unless-stopped

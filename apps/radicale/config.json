@@ -13,7 +13,24 @@
   "source": "https://github.com/Kozea/Radicale",
   "exposable": true,
   "supported_architectures": ["arm64", "amd64"],
-  "form_fields": [],
+  "form_fields": [
+    {
+      "type": "text",
+      "label": "Username",
+      "max": 50,
+      "min": 3,
+      "required": true,
+      "env_variable": "RADICALE_ADMIN_USER"
+    },
+    {
+      "type": "password",
+      "label": "Password",
+      "max": 50,
+      "min": 6,
+      "required": true,
+      "env_variable": "RADICALE_ADMIN_PASSWORD"
+    }
+  ],
   "created_at": 1726787255231,
   "updated_at": 1726787263656
 }
